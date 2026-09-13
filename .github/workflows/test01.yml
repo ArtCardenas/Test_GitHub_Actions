@@ -6,9 +6,10 @@ name: test_workflow
 # When to run it
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-  schedule:
-    - cron: '*/5 0 * * *'
+  # push:
+  # schedule:
+  #   - cron: '*/5 0 * * * *'  # runs every 5 minutes, all day 
+  workflow_dispatch: # manual button,  disable push and schedule to use this
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # What to run
@@ -21,7 +22,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      # - uses: actions/checkout@v4 # v4 is NodeJs v20,  v6 is NodeJS v24
+      - uses: actions/checkout@v6
 
       # Runs a single command using the runners shell
       - name: Step Run a one-line script
