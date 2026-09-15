@@ -23,7 +23,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - uses: actions/checkout@v4 # v4 is NodeJs v20,  v6 is NodeJS v24
+      - run: pwd && ls -all
       - uses: actions/checkout@v6
+      - run: pwd && ls -all
 
       # Runs a single command using the runners shell
       - name: Step Run a one-line script
