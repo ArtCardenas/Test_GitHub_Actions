@@ -15,11 +15,11 @@ on:
 # What to run
 jobs:
   # This workflow contains a single job called "build"
-  build_job:
+  build_job:      # remember to set the job name here or below with name: build_job
     # The type of runner that the job will run on
     # <ctrl> + <space> to see the list of available runners
-    #runs-on: ubuntu-latest
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
+    #runs-on: macos-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
