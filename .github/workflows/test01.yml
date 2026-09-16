@@ -34,7 +34,7 @@ jobs:
       - name: Step Run a one-line script
         run: sleep 5
 
-      # Runs a set of commands using the runners shell
+      # Runs a set of commands using the runners shell, Multi-line script "|"
       - name: Step Run a multi-line script
         run: |
           echo Add other actions to build,
