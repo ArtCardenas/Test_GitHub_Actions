@@ -1,7 +1,8 @@
-name: gh
+# name of workflow, usually match the name of the file.yml
+name: gh        
 
 on:
-  push:
+  push:         # to be called on push to the repo,  can be disabled if you want to run it manually 
     paths:
       - ".github/workflows/gh.yml"
   workflow_dispatch: # manual
