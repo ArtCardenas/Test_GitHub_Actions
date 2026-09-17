@@ -3,7 +3,7 @@ name: gh
 
 on:
   push:         # to be called on push to the repo,  can be disabled if you want to run it manually 
-    paths:
+    paths:      # only if this file is pushed, then the workflow will be triggered
       - ".github/workflows/gh.yml"
   workflow_dispatch: # manual
 
